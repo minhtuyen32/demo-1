@@ -1,0 +1,132 @@
+/*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*==Style cơ bản cho website==*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+/*==Style cho menu===*/
+#menu ul {
+  list-style-type: none;
+  text-align: right; 
+  font-size: 15px;     
+  padding-right: 50px;  
+  padding-top: 30px;
+  
+}
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  
+}
+
+
+  /* Làm mất dấu gach dưới  */
+  #menu ul li a {
+    color: blue;  /*màu chữ các thư mục của menu */
+    text-decoration: none; /*text-decoration là thuộc tính làm cho mục con trong menu có đường gạch dưới, vì thế để mất đi đường gạch chân, ta sẽ để “none“ */
+    display:block;
+  }
+  /* Hiệu ứng màu khi di chuyển chuột đến menu  */
+  #menu ul li a:hover {
+    
+    color: black;
+  }
+
+
+    
+/* Menu đa cấp hiển thị dropdown!  */
+#menu ul li > .sub-menu {
+  display: none;
+  position: absolute;
+}
+#menu li {
+  position: relative;
+ }
+ .sub-menu {
+  display: none;
+  position: absolute;
+ }
+ #menu ul li:hover .sub-menu {
+  display: block;
+}
+
+
+
+ 
+
+
+
+
+.mdl-card {
+  width: auto;
+  min-height: inherit;
+  position: static;
+  overflow: visible;
+  display: block;
+  padding: 45px 25px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03), 0 3px 1px -2px rgba(0, 0, 0, 0.03), 0 1px 5px 0 rgba(0, 0, 0, 0.03); }
+
+
+
+
+
+
+/*Skills Sec*/
+.skills-sec .progress-cat {
+  padding-bottom: 11px;
+  display: block;
+  font-size: 14px; }
+.skills-sec .progress-bar-graph .bar-wrap {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #bababa; }
+  .skills-sec .progress-bar-graph .bar-wrap strong {
+    font-size: 12px;
+    opacity: 0;
+    display: block;
+    float: left;
+    position: absolute;
+    right: 0px;
+    top: -27px; }
+  .skills-sec .progress-bar-graph .bar-wrap.green-bar span {
+    background: #01c853; }
+    .skills-sec .progress-bar-graph .bar-wrap.green-bar span:after {
+      background: #01c853; }
+  .skills-sec .progress-bar-graph .bar-wrap.yellow-bar span {
+    background: #fec107; }
+    .skills-sec .progress-bar-graph .bar-wrap.yellow-bar span:after {
+      background: #fec107; }
+  .skills-sec .progress-bar-graph .bar-wrap.red-bar span {
+    background: #ff3d00; }
+    .skills-sec .progress-bar-graph .bar-wrap.red-bar span:after {
+      background: #ff3d00; }
+  .skills-sec .progress-bar-graph .bar-wrap.blue-bar span {
+    background: #2879ff; }
+    .skills-sec .progress-bar-graph .bar-wrap.blue-bar span:after {
+      background: #2879ff; }
+.skills-sec .progress-bar-graph span {
+  height: 2px;
+  width: 0px;
+  display: block;
+  float: left;
+  position: relative;
+  overflow: visible !important; }
+  .skills-sec .progress-bar-graph span:after {
+    border-radius: 50%;
+    content: "";
+    height: 13px;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    width: 13px; }
+    /*Skills Sec*/
+
+
